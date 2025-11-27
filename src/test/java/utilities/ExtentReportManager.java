@@ -2,11 +2,18 @@ package utilities;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
+import org.testng.ITestResult;
+import testBases.baseClass;
 
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -43,5 +50,49 @@ public class ExtentReportManager implements ITestListener {
 
     }
 
+    public void onTestSuccess(ITestResult result){
+        test = extent.createTest(result.getClass().getName());
+        test.assignCategory(result.getMethod().getGroups());
+        test.log(Status.PASS,"Successfully passed test"+result.getMethod());
+    }
+
+    public void onTestFailure(ITestResult result){
+        test = extent.createTest(result.getClass().getName());
+        test.assignCategory(result.getMethod().getGroups());
+
+        try{
+            WebDriver driver = (WebDriver)result.getTestContext().getAttribute("WebDriver");
+
+            baseClass bc = new baseClass();
+            bc.driver = driver;
+            String imgPath = bc.captureScreenshot(result.getName());
+            test.addScreenCaptureFromPath(imgPath);
+
+
+        }catch(Exception e){
+            System.out.println("Could not take screenshot : " + e);
+        }
+
+    }
+
+    public void onTestSkipped(ITestResult result){
+        test = extent.createTest(result.getClass().getName());
+        test.assignCategory(result.getMethod().getGroups());
+        test.log(Status.SKIP, "Test skipped : "+result.getName());
+        test.log(Status.INFO,result.getThrowable().getMessage());
+    }
+
+    public void onFinish(ITestContext context){
+        extent.flush();
+        String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+repName;
+        File extentReport = new File(pathOfExtentReport);
+
+        try {
+            Desktop.getDesktop().browse(extentReport.toURI());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 
 }
