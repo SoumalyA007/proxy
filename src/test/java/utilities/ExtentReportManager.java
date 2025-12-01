@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import testBases.baseClass;
 
 import java.awt.*;
@@ -54,6 +55,10 @@ public class ExtentReportManager implements ITestListener {
         test = extent.createTest(result.getClass().getName());
         test.assignCategory(result.getMethod().getGroups());
         test.log(Status.PASS,"Successfully passed test"+result.getMethod());
+        List<String> reporterLogs = Reporter.getOutput(result);
+        for(String log : reporterLogs){
+            test.log(Status.INFO, log);
+        }
     }
 
     public void onTestFailure(ITestResult result){
@@ -71,6 +76,10 @@ public class ExtentReportManager implements ITestListener {
 
         }catch(Exception e){
             System.out.println("Could not take screenshot : " + e);
+        }
+        List<String> reporterLogs = Reporter.getOutput(result);
+        for(String log : reporterLogs){
+            test.log(Status.INFO, log);
         }
 
     }

@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.HasDevTools;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicReference;
@@ -17,12 +19,31 @@ public class CDPNetworkManager {
 
 
 
-    public class searchResult(){
+    public static class SearchResult {
+        private String url;
+        private double waitedMs;
+        private double responseTimeMs;
+        private String responseBody;
+        private List<String> productUrls;
 
+        public SearchResult(String url, double waitedMs, double responseTimeMs, String responseBody, List<String> productUrls) {
+            this.url = url;
+            this.waitedMs = waitedMs;
+            this.responseTimeMs = responseTimeMs;
+            this.responseBody = responseBody;
+            this.productUrls = productUrls;
+        }
+
+        // Getters
+        public String getUrl() { return url; }
+        public double getWaitedMs() { return waitedMs; }
+        public double getResponseTimeMs() { return responseTimeMs; }
+        public String getResponseBody() { return responseBody; }
+        public List<String> getProductUrls(){return productUrls;}
     }
 
 
-    public static searchResult captureFirstRequestResponse(WebDriver driver,Runnable trigger,String toMatchRequest) throws InterruptedException {
+    public static SearchResult captureFirstRequestResponse(WebDriver driver,Runnable trigger,String toMatchRequest) throws InterruptedException {
 
         DevTools devTools = ((HasDevTools)driver).getDevTools();
         devTools.createSession();
@@ -30,11 +51,13 @@ public class CDPNetworkManager {
 
         AtomicReference<RequestId> requestIdRef = new AtomicReference<>();
         AtomicReference<String> capturedUrl = new AtomicReference<>();
+        AtomicReference<List<String>> extractedUrls = new AtomicReference<>(new ArrayList<>());
 
         ConcurrentHashMap<RequestId,MonotonicTime> startTimes=new ConcurrentHashMap<>();
         ConcurrentHashMap<RequestId,String> idToUrl = new ConcurrentHashMap<>();
 
         AtomicReference<MonotonicTime> endTime = new AtomicReference<>();
+        AtomicReference<String> responseBody = new AtomicReference<>();
 
         devTools.addListener(Network.requestWillBeSent(), sendReqEvent -> {
             String url = sendReqEvent.getRequest().getUrl();
@@ -72,6 +95,18 @@ public class CDPNetworkManager {
                 if(matchbyURL || matchbyRId){
                     endTime.set(respReceived.getTimestamp());
                 }
+                try {
+                    Network.GetResponseBodyResponse bodyResponse = devTools.send(Network.getResponseBody(rId));
+                    String body = bodyResponse.getBody();
+                    responseBody.set(body);
+                    List<String> urls = extractProductUrls(body);
+                    extractedUrls.set(urls);
+                    System.out.println("[CDP] Response body captured for id=" + rId);
+                    System.out.println("[CDP] Extracted " + urls.size() + " product URLs");
+                } catch (Exception e) {
+                    System.out.println("[CDP] Could not get response body: " + e.getMessage());
+                }
+
                 if(endTime.get()!=null){
                     System.out.println("[CDP] response Received: id=" + rId + " and End time set.");
                 }else{
@@ -99,7 +134,7 @@ public class CDPNetworkManager {
             try{
                 devTools.close();
             }catch(Exception ignored){}
-            return new SearchResult(null, waitedMs,0);
+            return new SearchResult(null, waitedMs, 0, null, new ArrayList<>());
 
         }
 
@@ -109,11 +144,54 @@ public class CDPNetworkManager {
             extraMs+=100;
         }
 
+        double responseTimeMs = 0;
+        MonotonicTime start = startTimes.get(requestIdRef.get());
+        MonotonicTime finish = endTime.get();
+        // If start is null (redirect case), you can still do your URL-based fallback:
+        if (start == null && capturedUrl.get() != null) {
+            for (RequestId rid : startTimes.keySet()) {
+                String url = idToUrl.get(rid);
+                if (capturedUrl.get().equals(url)) {
+                    start = startTimes.get(rid);
+                    break;
+                }
+            }
+        }
+
+
+        if (start != null && finish != null) {
+            // MonotonicTime → Number → double seconds
+            double startSec  = ((Number) start.toJson()).doubleValue();
+            double finishSec = ((Number) finish.toJson()).doubleValue();
+
+            responseTimeMs = Math.round(finishSec - startSec);
+        }
+        try { devTools.clearListeners(); } catch (Exception ignored) {}
+        try { devTools.close(); } catch (Exception ignored) {}
+        try { devTools.clearListeners(); } catch (Exception ignored) {}
+
+        return new SearchResult(capturedUrl.get(), waitedMs, responseTimeMs,responseBody.get(),extractedUrls.get());
 
 
 
+    }
+    private static List<String> extractProductUrls(String responseBody) {
+        List<String> urls = new ArrayList<>();
+        if (responseBody == null || responseBody.isEmpty()) {
+            return urls;
+        }
 
+        String pattern = "https://www\\.ubuy\\.qa/en/search[^\\s\"'<>]*";
+        java.util.regex.Pattern regex = java.util.regex.Pattern.compile(pattern);
+        java.util.regex.Matcher matcher = regex.matcher(responseBody);
 
+        while (matcher.find()) {
+            String foundUrl = matcher.group();
+            if (!urls.contains(foundUrl)) {  // Avoid duplicates
+                urls.add(foundUrl);
+            }
+        }
 
+        return urls;
     }
 }

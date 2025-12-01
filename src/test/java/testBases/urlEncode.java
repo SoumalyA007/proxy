@@ -7,7 +7,7 @@ import java.nio.charset.StandardCharsets;
 
 public class urlEncode extends baseClass {
 
-    public String buildURL(String key){
+    public static String buildURL(String key){
 
         try{
             String keyword = URLEncoder.encode(key,StandardCharsets.UTF_8);

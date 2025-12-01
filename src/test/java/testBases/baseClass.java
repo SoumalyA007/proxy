@@ -23,7 +23,7 @@ import java.util.Properties;
 
 public class baseClass {
     public WebDriver driver;
-    public Properties p;
+    public static Properties p;
     public Logger logger;
 
     public void setup(String os, String browser, ITestContext testContext) throws IOException {

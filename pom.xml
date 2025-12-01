@@ -70,6 +70,12 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.20.0</version>
         </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.15.1</version>  <!-- or latest -->
+        </dependency>
+
 
         <!-- Apache Commons Email (for performance alert emails) :contentReference[oaicite:14]{index=14} -->
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
