@@ -1,6 +1,5 @@
 package testBases;
 
-import com.google.common.base.Utf8;
 
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;

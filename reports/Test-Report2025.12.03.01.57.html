@@ -1,0 +1,1468 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Automate Proxy</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Proxy</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 3, 2025 01:57:49 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">org.testng.internal.TestResult</p>
+            <p class="text-sm">
+              <span>2:02:42 am</span> / <span>00:00:00:032</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">org.testng.internal.TestResult</h5>
+<span class='badge badge-success'>12.03.2025 2:02:42 am</span>
+<span class='badge badge-danger'>12.03.2025 2:02:42 am</span>
+<span class='badge badge-default'>00:00:00:032</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Successfully passed testtest_search_detail_speed_15_keywords
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          <---- Aggregated test for the speed test of detail and search has started  ---->
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 1 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: gaming console controller
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=gaming+console+controller
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoiZ2FtaW5nIGNvbnNvbGUgY29udHJvbGxlciIsIm5faWQiOiIiLCJwIjoiMSIsImIiOiIiLCJ1X2YiOiIiLCJwX3IiOiIiLCJzX2J5IjoiIiwiaXNfYnJhbmRfdXJsIjoiIiwic19pZCI6IjQiLCJsYW5nIjoiIiwiZCI6ImQiLCJkYyI6IiIsImlzX2x1eHVyeSI6IiIsImRldmljZV90eXBlIjoiZGVza3RvcCIsInRlc3RpbmciOiIiLCJzaG93dXJsIjoiIiwidG9rZW4iOiJaMkZ0YVc1blkyOXVjMjlzWldOdmJuUnliMnhzWlhJeWZEZGpPR1ZpTmpFM1l6ZzRZekZtTXpJeFpHUXhaall3TnpjME9HWXdOMlU0TTJFNE5UZGlOalJqTURBM1pUWm1Oak0yTURobE5XRmlNbU0xWmpFeVpqRjhZbU14TVRFNFl6STNabVl5T0RJNFl6UmxaV1kxTURaaE0ySTRPVEJoTW1OaVpXTXpabUV5T1RWbU1UWmtZbVF3WkRWaE9UUmtNemRqTVRKaVpUWXpOZz09IiwiY3VycmVudF91cmwiOiIiLCJyZWYiOiIiLCJjYXRfbmFtZSI6IiIsImRlYnVnX3NlYXJjaCI6dHJ1ZX0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 15
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 4696.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/QVEWJLI6Y-2025-retro-gaming-console-20k-classic-games-23-emulators-4k-hdmi-game-stick-with-upgraded-dual-2-4g-wireless-controllers-64gb-plug-and-play-video?UTM=LTD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvUVZFV0pMSTZZLTIwMjUtcmV0cm8tZ2FtaW5nLWNvbnNvbGUtMjBrLWNsYXNzaWMtZ2FtZXMtMjMtZW11bGF0b3JzLTRrLWhkbWktZ2FtZS1zdGljay13aXRoLXVwZ3JhZGVkLWR1YWwtMi00Zy13aXJlbGVzcy1jb250cm9sbGVycy02NGdiLXBsdWctYW5kLXBsYXktdmlkZW8iLCJpZCI6IlFWRVdKTEk2WSIsInNrdSI6IkIwRktHUkM3OUwiLCJ2X3NrdSI6IiIsInBfc2t1IjoiQjBGS0dSQzc5TCIsImNfaWQiOiIiLCJzbmFtZSI6IlVTIiwic2JuYW1lIjoidXNzdG9yZSIsImlzX2FqYXgiOmZhbHNlLCJwaWQiOiIxNzUwMjUwNjciLCJzaWQiOiI0IiwiY2FuX3VybCI6Imh0dHBzOi8vd3d3LnVidXkucWEvZW4vcHJvZHVjdC9RVkVXSkxJNlktMjAyNS1yZXRyby1nYW1pbmctY29uc29sZS0yMGstY2xhc3NpYy1nYW1lcy0yMy1lbXVsYXRvcnMtNGstaGRtaS1nYW1lLXN0aWNrLXdpdGgtdXBncmFkZWQtZHVhbC0yLTRnLXdpcmVsZXNzLWNvbnRyb2xsZXJzLTY0Z2ItcGx1Zy1hbmQtcGxheS12aWRlbyIsImxuZyI6ImVuIiwiZGlyIjoiYWxsc3RvcmUiLCJmbiI6ImZldGNoIiwiZCI6ImQiLCJ0b2tlbiI6ImMyMTc1YzQwNzRlMzBlZGM0NjdkYmFhZjJlNTYxMWI2ZGV0YWlsIiwibHYiOiJ2NCIsImN1c3RvbWVyX2lkIjoiIiwiY191X3Bfc19pZCI6IiIsImN1ciI6IlFBUiIsImlzX2RlYWxfYWN0aXZlIjoiMSJ9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 1257.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 2 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: wifi mesh router system
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=wifi+mesh+router+system
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoid2lmaSBtZXNoIHJvdXRlciBzeXN0ZW0iLCJuX2lkIjoiIiwicCI6IjEiLCJiIjoiIiwidV9mIjoiIiwicF9yIjoiIiwic19ieSI6IiIsImlzX2JyYW5kX3VybCI6IiIsInNfaWQiOiI0IiwibGFuZyI6IiIsImQiOiJkIiwiZGMiOiIiLCJpc19sdXh1cnkiOiIiLCJkZXZpY2VfdHlwZSI6ImRlc2t0b3AiLCJ0ZXN0aW5nIjoiIiwic2hvd3VybCI6IiIsInRva2VuIjoiZDJsbWFXMWxjMmh5YjNWMFpYSnplWE4wWlcweWZEZGpPR1ZpTmpFM1l6ZzRZekZtTXpJeFpHUXhaall3TnpjME9HWXdOMlU0TTJFNE5UZGlOalJqTURBM1pUWm1Oak0yTURobE5XRmlNbU0xWmpFeVpqRjhZVE0wTkRNeU5UaGxOems1WmpReFlUVmhPREEwTkdabU9USXlZalE0T0dNMk4yVTFOVFl3TURnNE16RmxaalUzTkRWak9HSmtNekZpWkRBellUTTBOQT09IiwiY3VycmVudF91cmwiOiIiLCJyZWYiOiIiLCJjYXRfbmFtZSI6IiIsImRlYnVnX3NlYXJjaCI6dHJ1ZX0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 15
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 5013.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/N37Z7SYXO-tp-link-deco-m5-mesh-wifi-router-dual-band-gigabit-wireless-router-quad-core-cpu-mu-mimo-homecare-parental-control-up-to-2-000-sq-ft?UTM=LTD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvTjM3WjdTWVhPLXRwLWxpbmstZHVhbC1iYW5kLWJlMzYwMC13aWZpLTctbWVzaC13aS1maS1zeXN0ZW0tZGVjby1iZTIzLTQtc3RyZWFtLTMtNi1nYnBzLTE2MC1taHotY2hhbm5lbHMtY292ZXJzLXVwLXRvLTYtNTAwLXNxLWZ0LTItMi01Zy1wb3J0cyIsImlkIjoiTjM3WjdTWVhPIiwic2t1IjoiQjBEUVA0RE5OSiIsInZfc2t1IjoiIiwicF9za3UiOiJCMERRUDRETk5KIiwiY19pZCI6IiIsInNuYW1lIjoiVVMiLCJzYm5hbWUiOiJ1c3N0b3JlIiwiaXNfYWpheCI6ZmFsc2UsInBpZCI6IjQ2MTUzMTgiLCJzaWQiOiI0IiwiY2FuX3VybCI6Imh0dHBzOi8vd3d3LnVidXkucWEvZW4vcHJvZHVjdC9OMzdaN1NZWE8tdHAtbGluay1kdWFsLWJhbmQtYmUzNjAwLXdpZmktNy1tZXNoLXdpLWZpLXN5c3RlbS1kZWNvLWJlMjMtNC1zdHJlYW0tMy02LWdicHMtMTYwLW1oei1jaGFubmVscy1jb3ZlcnMtdXAtdG8tNi01MDAtc3EtZnQtMi0yLTVnLXBvcnRzIiwibG5nIjoiZW4iLCJkaXIiOiJhbGxzdG9yZSIsImZuIjoiZmV0Y2giLCJkIjoiZCIsInRva2VuIjoiYzIxNzVjNDA3NGUzMGVkYzQ2N2RiYWFmMmU1NjExYjZkZXRhaWwiLCJsdiI6InY0IiwiY3VzdG9tZXJfaWQiOiIiLCJjX3VfcF9zX2lkIjoiIiwiY3VyIjoiUUFSIiwiaXNfZGVhbF9hY3RpdmUiOiIxIn0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 1103.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 3 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: pulse oximeter fingertip
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=pulse+oximeter+fingertip
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoicHVsc2Ugb3hpbWV0ZXIgZmluZ2VydGlwIiwibl9pZCI6IiIsInAiOiIxIiwiYiI6IiIsInVfZiI6IiIsInBfciI6IiIsInNfYnkiOiIiLCJpc19icmFuZF91cmwiOiIiLCJzX2lkIjoiNCIsImxhbmciOiIiLCJkIjoiZCIsImRjIjoiIiwiaXNfbHV4dXJ5IjoiIiwiZGV2aWNlX3R5cGUiOiJkZXNrdG9wIiwidGVzdGluZyI6IiIsInNob3d1cmwiOiIiLCJ0b2tlbiI6ImNIVnNjMlZ2ZUdsdFpYUmxjbVpwYm1kbGNuUnBjREo4TjJNNFpXSTJNVGRqT0Roak1XWXpNakZrWkRGbU5qQTNOelE0WmpBM1pUZ3pZVGcxTjJJMk5HTXdNRGRsTm1ZMk16WXdPR1UxWVdJeVl6Vm1NVEptTVh4bE9HWTVaRGhtTnpGbU9EbG1OV1ptT0dVd05qVXlORGN5WVRCa1lXWmtNREV6TnpJek5HWXpOemt6TURrd01USXpNMk0yTlRJek5UWTBOVEkzT0RBMiIsImN1cnJlbnRfdXJsIjoiIiwicmVmIjoiIiwiY2F0X25hbWUiOiIiLCJkZWJ1Z19zZWFyY2giOnRydWV9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 48
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 4876.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/QWEZXMRB6-fingertip-pulse-oximeter-4-data-pulse-oximeter-with-respiratory-respiration-rate-monitor-oximeter-for-sports-aviation-use-only-purple
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvUVdFWlhNUkI2LWZpbmdlcnRpcC1wdWxzZS1veGltZXRlci00LWRhdGEtcHVsc2Utb3hpbWV0ZXItd2l0aC1yZXNwaXJhdG9yeS1yZXNwaXJhdGlvbi1yYXRlLW1vbml0b3Itb3hpbWV0ZXItZm9yLXNwb3J0cy1hdmlhdGlvbi11c2Utb25seS1wdXJwbGUiLCJpZCI6IlFXRVpYTVJCNiIsInNrdSI6IkIwRjk5OFpDODUiLCJ2X3NrdSI6IiIsInBfc2t1IjoiQjBGOTk4WkM4NSIsImNfaWQiOiIiLCJzbmFtZSI6IlVTIiwic2JuYW1lIjoidXNzdG9yZSIsImlzX2FqYXgiOmZhbHNlLCJwaWQiOiIxODA3NjE4NjMiLCJzaWQiOiI0IiwiY2FuX3VybCI6Imh0dHBzOi8vd3d3LnVidXkucWEvZW4vcHJvZHVjdC9RV0VaWE1SQjYtZmluZ2VydGlwLXB1bHNlLW94aW1ldGVyLTQtZGF0YS1wdWxzZS1veGltZXRlci13aXRoLXJlc3BpcmF0b3J5LXJlc3BpcmF0aW9uLXJhdGUtbW9uaXRvci1veGltZXRlci1mb3Itc3BvcnRzLWF2aWF0aW9uLXVzZS1vbmx5LXB1cnBsZSIsImxuZyI6ImVuIiwiZGlyIjoiYWxsc3RvcmUiLCJmbiI6ImZldGNoIiwiZCI6ImQiLCJ0b2tlbiI6ImMyMTc1YzQwNzRlMzBlZGM0NjdkYmFhZjJlNTYxMWI2ZGV0YWlsIiwibHYiOiJ2NCIsImN1c3RvbWVyX2lkIjoiIiwiY191X3Bfc19pZCI6IiIsImN1ciI6IlFBUiIsImlzX2RlYWxfYWN0aXZlIjoiMSJ9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 1111.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 4 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: tempered glass screen protector
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=tempered+glass+screen+protector
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoidGVtcGVyZWQgZ2xhc3Mgc2NyZWVuIHByb3RlY3RvciIsIm5faWQiOiIiLCJwIjoiMSIsImIiOiIiLCJ1X2YiOiIiLCJwX3IiOiIiLCJzX2J5IjoiIiwiaXNfYnJhbmRfdXJsIjoiIiwic19pZCI6IjQiLCJsYW5nIjoiIiwiZCI6ImQiLCJkYyI6IiIsImlzX2x1eHVyeSI6IiIsImRldmljZV90eXBlIjoiZGVza3RvcCIsInRlc3RpbmciOiIiLCJzaG93dXJsIjoiIiwidG9rZW4iOiJkR1Z0Y0dWeVpXUm5iR0Z6YzNOamNtVmxibkJ5YjNSbFkzUnZjako4TjJNNFpXSTJNVGRqT0Roak1XWXpNakZrWkRGbU5qQTNOelE0WmpBM1pUZ3pZVGcxTjJJMk5HTXdNRGRsTm1ZMk16WXdPR1UxWVdJeVl6Vm1NVEptTVh3eE1tRXdaREV5WkRFMk9UQXlZbVF3WmpFeVkyRm1OR0poTm1WalpUSTJNemsxTW1FMU1ETTJNbU01WVdFMVpUTXlNbVl5TURNM05qZ3hNV1kzWTJZNSIsImN1cnJlbnRfdXJsIjoiIiwicmVmIjoiIiwiY2F0X25hbWUiOiIiLCJkZWJ1Z19zZWFyY2giOnRydWV9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 16
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 3748.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/FLZ5F1ZDK-ailun-3-pack-screen-protector-for-iphone-15-6-1-inch-3-pack-camera-lens-protector-case-friendly-tempered-glass-film-9h-hardness-hd-6-pack
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvRkxaNUYxWkRLLWFpbHVuLTMtcGFjay1zY3JlZW4tcHJvdGVjdG9yLWZvci1pcGhvbmUtMTUtNi0xLWluY2gtMy1wYWNrLWNhbWVyYS1sZW5zLXByb3RlY3Rvci1jYXNlLWZyaWVuZGx5LXRlbXBlcmVkLWdsYXNzLWZpbG0tOWgtaGFyZG5lc3MtaGQtNi1wYWNrIiwiaWQiOiJGTFo1RjFaREsiLCJza3UiOiJCMENDWU40MkRMIiwidl9za3UiOiIiLCJwX3NrdSI6IkIwQ0NZTjQyREwiLCJjX2lkIjoiIiwic25hbWUiOiJVUyIsInNibmFtZSI6InVzc3RvcmUiLCJpc19hamF4IjpmYWxzZSwicGlkIjoiNzUyMDgxNjEiLCJzaWQiOiI0IiwiY2FuX3VybCI6Imh0dHBzOi8vd3d3LnVidXkucWEvZW4vcHJvZHVjdC9GTFo1RjFaREstYWlsdW4tMy1wYWNrLXNjcmVlbi1wcm90ZWN0b3ItZm9yLWlwaG9uZS0xNS02LTEtaW5jaC0zLXBhY2stY2FtZXJhLWxlbnMtcHJvdGVjdG9yLWNhc2UtZnJpZW5kbHktdGVtcGVyZWQtZ2xhc3MtZmlsbS05aC1oYXJkbmVzcy1oZC02LXBhY2siLCJsbmciOiJlbiIsImRpciI6ImFsbHN0b3JlIiwiZm4iOiJmZXRjaCIsImQiOiJkIiwidG9rZW4iOiJjMjE3NWM0MDc0ZTMwZWRjNDY3ZGJhYWYyZTU2MTFiNmRldGFpbCIsImx2IjoidjQiLCJjdXN0b21lcl9pZCI6IiIsImNfdV9wX3NfaWQiOiIiLCJjdXIiOiJRQVIiLCJpc19kZWFsX2FjdGl2ZSI6IjEifQ%3D%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 4335.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 5 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: indoor plant ceramic pots
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=indoor+plant+ceramic+pots
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoiaW5kb29yIHBsYW50IGNlcmFtaWMgcG90cyIsIm5faWQiOiIiLCJwIjoiMSIsImIiOiIiLCJ1X2YiOiIiLCJwX3IiOiIiLCJzX2J5IjoiIiwiaXNfYnJhbmRfdXJsIjoiIiwic19pZCI6IjQiLCJsYW5nIjoiIiwiZCI6ImQiLCJkYyI6IiIsImlzX2x1eHVyeSI6IiIsImRldmljZV90eXBlIjoiZGVza3RvcCIsInRlc3RpbmciOiIiLCJzaG93dXJsIjoiIiwidG9rZW4iOiJhVzVrYjI5eWNHeGhiblJqWlhKaGJXbGpjRzkwY3pKOE4yTTRaV0kyTVRkak9EaGpNV1l6TWpGa1pERm1OakEzTnpRNFpqQTNaVGd6WVRnMU4ySTJOR013TURkbE5tWTJNell3T0dVMVlXSXlZelZtTVRKbU1YeGhORGM1TWpkbVpqaGhObVl5WWpjeVpXRmlZMlkyTURZNU5qUmtOMkZrTlRneE9ESXdaVFUzTldSaE1qRTNNV1kwTnpGa05qVXhZakE0T1RZeU1tUmoiLCJjdXJyZW50X3VybCI6IiIsInJlZiI6IiIsImNhdF9uYW1lIjoiIiwiZGVidWdfc2VhcmNoIjp0cnVlfQ%3D%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 48
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 3385.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/14IF2MIZS-creative-co-op-large-matte-white-embossed-stoneware-planter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvMTRJRjJNSVpTLWNyZWF0aXZlLWNvLW9wLWxhcmdlLW1hdHRlLXdoaXRlLWVtYm9zc2VkLXN0b25ld2FyZS1wbGFudGVyIiwiaWQiOiIxNElGMk1JWlMiLCJza3UiOiJCMDdOQzc1TDhSIiwidl9za3UiOiIiLCJwX3NrdSI6IkIwN05DNzVMOFIiLCJjX2lkIjoiIiwic25hbWUiOiJVUyIsInNibmFtZSI6InVzc3RvcmUiLCJpc19hamF4IjpmYWxzZSwicGlkIjoiNTY0MjYzMjUiLCJzaWQiOiI0IiwiY2FuX3VybCI6Imh0dHBzOi8vd3d3LnVidXkucWEvZW4vcHJvZHVjdC8xNElGMk1JWlMtY3JlYXRpdmUtY28tb3AtbGFyZ2UtbWF0dGUtd2hpdGUtZW1ib3NzZWQtc3RvbmV3YXJlLXBsYW50ZXIiLCJsbmciOiJlbiIsImRpciI6ImFsbHN0b3JlIiwiZm4iOiJmZXRjaCIsImQiOiJkIiwidG9rZW4iOiJjMjE3NWM0MDc0ZTMwZWRjNDY3ZGJhYWYyZTU2MTFiNmRldGFpbCIsImx2IjoidjQiLCJjdXN0b21lcl9pZCI6IiIsImNfdV9wX3NfaWQiOiIiLCJjdXIiOiJRQVIiLCJpc19kZWFsX2FjdGl2ZSI6IjEifQ%3D%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 1160.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 6 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: disposable nitrile gloves
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=disposable+nitrile+gloves
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoiZGlzcG9zYWJsZSBuaXRyaWxlIGdsb3ZlcyIsIm5faWQiOiIiLCJwIjoiMSIsImIiOiIiLCJ1X2YiOiIiLCJwX3IiOiIiLCJzX2J5IjoiIiwiaXNfYnJhbmRfdXJsIjoiIiwic19pZCI6IjQiLCJsYW5nIjoiIiwiZCI6ImQiLCJkYyI6IiIsImlzX2x1eHVyeSI6IiIsImRldmljZV90eXBlIjoiZGVza3RvcCIsInRlc3RpbmciOiIiLCJzaG93dXJsIjoiIiwidG9rZW4iOiJaR2x6Y0c5ellXSnNaVzVwZEhKcGJHVm5iRzkyWlhNeWZEZGpPR1ZpTmpFM1l6ZzRZekZtTXpJeFpHUXhaall3TnpjME9HWXdOMlU0TTJFNE5UZGlOalJqTURBM1pUWm1Oak0yTURobE5XRmlNbU0xWmpFeVpqRjhaamN4TlRBMU4yWmhPR05rTVRkak1UYzFOak13WkdNeFptWXpObVE0T1RJM04yWTBPV1k0TmpBMVlUQXpaV1pqTW1Oa01UWmlaRGMwT0Rnek9HTmhOQT09IiwiY3VycmVudF91cmwiOiIiLCJyZWYiOiIiLCJjYXRfbmFtZSI6IiIsImRlYnVnX3NlYXJjaCI6dHJ1ZX0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 16
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 6401.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/MIXMUUV6U-medguy-medical-nitrile-exam-gloves-4-2-mil-black-powder-free-latex-free-non-sterile-food-grade-disposable-glove-100-pcs
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvTUlYTVVVVjZVLW1lZGd1eS1tZWRpY2FsLW5pdHJpbGUtZXhhbS1nbG92ZXMtNC0yLW1pbC1ibGFjay1wb3dkZXItZnJlZS1sYXRleC1mcmVlLW5vbi1zdGVyaWxlLWZvb2QtZ3JhZGUtZGlzcG9zYWJsZS1nbG92ZS0xMDAtcGNzIiwiaWQiOiJNSVhNVVVWNlUiLCJza3UiOiJCMERLNjlKM0JHIiwidl9za3UiOiIiLCJwX3NrdSI6IkIwREs2OUozQkciLCJjX2lkIjoiIiwic25hbWUiOiJVUyIsInNibmFtZSI6InVzc3RvcmUiLCJpc19hamF4IjpmYWxzZSwicGlkIjoiMTA1NDUxNjI2Iiwic2lkIjoiNCIsImNhbl91cmwiOiJodHRwczovL3d3dy51YnV5LnFhL2VuL3Byb2R1Y3QvTUlYTVVVVjZVLW1lZGd1eS1tZWRpY2FsLW5pdHJpbGUtZXhhbS1nbG92ZXMtNC0yLW1pbC1ibGFjay1wb3dkZXItZnJlZS1sYXRleC1mcmVlLW5vbi1zdGVyaWxlLWZvb2QtZ3JhZGUtZGlzcG9zYWJsZS1nbG92ZS0xMDAtcGNzIiwibG5nIjoiZW4iLCJkaXIiOiJhbGxzdG9yZSIsImZuIjoiZmV0Y2giLCJkIjoiZCIsInRva2VuIjoiYzIxNzVjNDA3NGUzMGVkYzQ2N2RiYWFmMmU1NjExYjZkZXRhaWwiLCJsdiI6InY0IiwiY3VzdG9tZXJfaWQiOiIiLCJjX3VfcF9zX2lkIjoiIiwiY3VyIjoiUUFSIiwiaXNfZGVhbF9hY3RpdmUiOiIxIn0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 3977.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 7 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: weighted blanket for sleep
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=weighted+blanket+for+sleep
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoid2VpZ2h0ZWQgYmxhbmtldCBmb3Igc2xlZXAiLCJuX2lkIjoiIiwicCI6IjEiLCJiIjoiIiwidV9mIjoiIiwicF9yIjoiIiwic19ieSI6IiIsImlzX2JyYW5kX3VybCI6IiIsInNfaWQiOiI0IiwibGFuZyI6IiIsImQiOiJkIiwiZGMiOiIiLCJpc19sdXh1cnkiOiIiLCJkZXZpY2VfdHlwZSI6ImRlc2t0b3AiLCJ0ZXN0aW5nIjoiIiwic2hvd3VybCI6IiIsInRva2VuIjoiZDJWcFoyaDBaV1JpYkdGdWEyVjBabTl5YzJ4bFpYQXlmRGRqT0dWaU5qRTNZemc0WXpGbU16SXhaR1F4WmpZd056YzBPR1l3TjJVNE0yRTROVGRpTmpSak1EQTNaVFptTmpNMk1EaGxOV0ZpTW1NMVpqRXlaakY4WVRreE5HTmhOVGN5WXpFNVpEbGpOVGcxWlRCa09UUXpPV1l5TURFMFpqZ3hZMlkxTXpnd01UQTRORGhrT0RNM1pXVTFaRGczTWpVM1pqQmlPV001WVE9PSIsImN1cnJlbnRfdXJsIjoiIiwicmVmIjoiIiwiY2F0X25hbWUiOiIiLCJkZWJ1Z19zZWFyY2giOnRydWV9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 47
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 4399.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/8QMPBF7VK-cuteking-weighted-blanket-for-kids-7lbs-40-x-60-twin-size-grey-heavy-blanket-for-60-80lbs-weighted-blanket-for-cooling-heating?UTM=LTD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvOFFNUEJGN1ZLLWN1dGVraW5nLXdlaWdodGVkLWJsYW5rZXQtZm9yLWtpZHMtN2xicy00MC14LTYwLXR3aW4tc2l6ZS1ncmV5LWhlYXZ5LWJsYW5rZXQtZm9yLTYwLTgwbGJzLXdlaWdodGVkLWJsYW5rZXQtZm9yLWNvb2xpbmctaGVhdGluZyIsImlkIjoiOFFNUEJGN1ZLIiwic2t1IjoiQjBCUEg5UDVKUSIsInZfc2t1IjoiIiwicF9za3UiOiJCMEJQSDlQNUpRIiwiY19pZCI6IiIsInNuYW1lIjoiVVMiLCJzYm5hbWUiOiJ1c3N0b3JlIiwiaXNfYWpheCI6ZmFsc2UsInBpZCI6IjY1ODM3NzkyIiwic2lkIjoiNCIsImNhbl91cmwiOiJodHRwczovL3d3dy51YnV5LnFhL2VuL3Byb2R1Y3QvOFFNUEJGN1ZLLWN1dGVraW5nLXdlaWdodGVkLWJsYW5rZXQtZm9yLWtpZHMtN2xicy00MC14LTYwLXR3aW4tc2l6ZS1ncmV5LWhlYXZ5LWJsYW5rZXQtZm9yLTYwLTgwbGJzLXdlaWdodGVkLWJsYW5rZXQtZm9yLWNvb2xpbmctaGVhdGluZyIsImxuZyI6ImVuIiwiZGlyIjoiYWxsc3RvcmUiLCJmbiI6ImZldGNoIiwiZCI6ImQiLCJ0b2tlbiI6ImMyMTc1YzQwNzRlMzBlZGM0NjdkYmFhZjJlNTYxMWI2ZGV0YWlsIiwibHYiOiJ2NCIsImN1c3RvbWVyX2lkIjoiIiwiY191X3Bfc19pZCI6IiIsImN1ciI6IlFBUiIsImlzX2RlYWxfYWN0aXZlIjoiMSJ9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 5252.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 8 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: charcoal peel off mask
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=charcoal+peel+off+mask
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoiY2hhcmNvYWwgcGVlbCBvZmYgbWFzayIsIm5faWQiOiIiLCJwIjoiMSIsImIiOiIiLCJ1X2YiOiIiLCJwX3IiOiIiLCJzX2J5IjoiIiwiaXNfYnJhbmRfdXJsIjoiIiwic19pZCI6IjQiLCJsYW5nIjoiIiwiZCI6ImQiLCJkYyI6IiIsImlzX2x1eHVyeSI6IiIsImRldmljZV90eXBlIjoiZGVza3RvcCIsInRlc3RpbmciOiIiLCJzaG93dXJsIjoiIiwidG9rZW4iOiJZMmhoY21OdllXeHdaV1ZzYjJabWJXRnpheko4TjJNNFpXSTJNVGRqT0Roak1XWXpNakZrWkRGbU5qQTNOelE0WmpBM1pUZ3pZVGcxTjJJMk5HTXdNRGRsTm1ZMk16WXdPR1UxWVdJeVl6Vm1NVEptTVh3NFkySmlZekV4WlRneVkyWm1NVE0zTmprM01qRmtaVGxoTXpCak1tTTFPRFkzWVdNNFpUUTJNMkkzTldKbU9Ea3dOek16WkdNMlptTXlOVGcyT1RSaSIsImN1cnJlbnRfdXJsIjoiIiwicmVmIjoiIiwiY2F0X25hbWUiOiIiLCJkZWJ1Z19zZWFyY2giOnRydWV9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 45
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 3464.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/QKL4NYOJC-peel-off-face-mask-blackhead-remover-mask-for-men-charcoal-peel-off-black-mask-facial-mask-deep-pore-cleaner-nose-blackhead-remover-pore-release
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvUUtMNE5ZT0pDLXBlZWwtb2ZmLWZhY2UtbWFzay1ibGFja2hlYWQtcmVtb3Zlci1tYXNrLWZvci1tZW4tY2hhcmNvYWwtcGVlbC1vZmYtYmxhY2stbWFzay1mYWNpYWwtbWFzay1kZWVwLXBvcmUtY2xlYW5lci1ub3NlLWJsYWNraGVhZC1yZW1vdmVyLXBvcmUtcmVsZWFzZSIsImlkIjoiUUtMNE5ZT0pDIiwic2t1IjoiQjBGREI1SjhCSCIsInZfc2t1IjoiIiwicF9za3UiOiJCMEZEQjVKOEJIIiwiY19pZCI6IiIsInNuYW1lIjoiVVMiLCJzYm5hbWUiOiJ1c3N0b3JlIiwiaXNfYWpheCI6ZmFsc2UsInBpZCI6IjE1NjQ4ODI1NyIsInNpZCI6IjQiLCJjYW5fdXJsIjoiaHR0cHM6Ly93d3cudWJ1eS5xYS9lbi9wcm9kdWN0L1FLTDROWU9KQy1wZWVsLW9mZi1mYWNlLW1hc2stYmxhY2toZWFkLXJlbW92ZXItbWFzay1mb3ItbWVuLWNoYXJjb2FsLXBlZWwtb2ZmLWJsYWNrLW1hc2stZmFjaWFsLW1hc2stZGVlcC1wb3JlLWNsZWFuZXItbm9zZS1ibGFja2hlYWQtcmVtb3Zlci1wb3JlLXJlbGVhc2UiLCJsbmciOiJlbiIsImRpciI6ImFsbHN0b3JlIiwiZm4iOiJmZXRjaCIsImQiOiJkIiwidG9rZW4iOiJjMjE3NWM0MDc0ZTMwZWRjNDY3ZGJhYWYyZTU2MTFiNmRldGFpbCIsImx2IjoidjQiLCJjdXN0b21lcl9pZCI6IiIsImNfdV9wX3NfaWQiOiIiLCJjdXIiOiJRQVIiLCJpc19kZWFsX2FjdGl2ZSI6IjEifQ%3D%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 4784.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 9 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: laptop cooling pad
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=laptop+cooling+pad
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoibGFwdG9wIGNvb2xpbmcgcGFkIiwibl9pZCI6IiIsInAiOiIxIiwiYiI6IiIsInVfZiI6IiIsInBfciI6IiIsInNfYnkiOiIiLCJpc19icmFuZF91cmwiOiIiLCJzX2lkIjoiNCIsImxhbmciOiIiLCJkIjoiZCIsImRjIjoiIiwiaXNfbHV4dXJ5IjoiIiwiZGV2aWNlX3R5cGUiOiJkZXNrdG9wIiwidGVzdGluZyI6IiIsInNob3d1cmwiOiIiLCJ0b2tlbiI6ImJHRndkRzl3WTI5dmJHbHVaM0JoWkRKOE4yTTRaV0kyTVRkak9EaGpNV1l6TWpGa1pERm1OakEzTnpRNFpqQTNaVGd6WVRnMU4ySTJOR013TURkbE5tWTJNell3T0dVMVlXSXlZelZtTVRKbU1YdzFabVJsWlROaU9HSmpOamsxWkRFMVpqa3hZekF5T0dJMU5qbGlaR1JqWkRkbU5tRm1Nemt3T1RSaU9HVXhNVFprWldOa056SmxOVFV4TmpkbU1qTm0iLCJjdXJyZW50X3VybCI6IiIsInJlZiI6IiIsImNhdF9uYW1lIjoiIiwiZGVidWdfc2VhcmNoIjp0cnVlfQ%3D%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 16
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 2647.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/M7ER0GFJS-laptop-cooling-pad-rgb-lights-laptop-cooler-11-fans-for-15-6-19-3-inch-laptops-gaming-laptop-fan-cooling-pad-with-8-height-stands-2-usb-ports-a21
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvTTdFUjBHRkpTLWxhcHRvcC1jb29saW5nLXBhZC1yZ2ItbGlnaHRzLWxhcHRvcC1jb29sZXItMTEtZmFucy1mb3ItMTUtNi0xOS0zLWluY2gtbGFwdG9wcy1nYW1pbmctbGFwdG9wLWZhbi1jb29saW5nLXBhZC13aXRoLTgtaGVpZ2h0LXN0YW5kcy0yLXVzYi1wb3J0cy1hMjEiLCJpZCI6Ik03RVIwR0ZKUyIsInNrdSI6IkIwRERTWlA0NDkiLCJ2X3NrdSI6IiIsInBfc2t1IjoiQjBERFNaUDQ0OSIsImNfaWQiOiIiLCJzbmFtZSI6IlVTIiwic2JuYW1lIjoidXNzdG9yZSIsImlzX2FqYXgiOmZhbHNlLCJwaWQiOiIxMTIwNDI0MjgiLCJzaWQiOiI0IiwiY2FuX3VybCI6Imh0dHBzOi8vd3d3LnVidXkucWEvZW4vcHJvZHVjdC9NN0VSMEdGSlMtbGFwdG9wLWNvb2xpbmctcGFkLXJnYi1saWdodHMtbGFwdG9wLWNvb2xlci0xMS1mYW5zLWZvci0xNS02LTE5LTMtaW5jaC1sYXB0b3BzLWdhbWluZy1sYXB0b3AtZmFuLWNvb2xpbmctcGFkLXdpdGgtOC1oZWlnaHQtc3RhbmRzLTItdXNiLXBvcnRzLWEyMSIsImxuZyI6ImVuIiwiZGlyIjoiYWxsc3RvcmUiLCJmbiI6ImZldGNoIiwiZCI6ImQiLCJ0b2tlbiI6ImMyMTc1YzQwNzRlMzBlZGM0NjdkYmFhZjJlNTYxMWI2ZGV0YWlsIiwibHYiOiJ2NCIsImN1c3RvbWVyX2lkIjoiIiwiY191X3Bfc19pZCI6IiIsImN1ciI6IlFBUiIsImlzX2RlYWxfYWN0aXZlIjoiMSJ9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 3655.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 10 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: washable non slip rug
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=washable+non+slip+rug
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoid2FzaGFibGUgbm9uIHNsaXAgcnVnIiwibl9pZCI6IiIsInAiOiIxIiwiYiI6IiIsInVfZiI6IiIsInBfciI6IiIsInNfYnkiOiIiLCJpc19icmFuZF91cmwiOiIiLCJzX2lkIjoiNCIsImxhbmciOiIiLCJkIjoiZCIsImRjIjoiIiwiaXNfbHV4dXJ5IjoiIiwiZGV2aWNlX3R5cGUiOiJkZXNrdG9wIiwidGVzdGluZyI6IiIsInNob3d1cmwiOiIiLCJ0b2tlbiI6ImQyRnphR0ZpYkdWdWIyNXpiR2x3Y25Wbk1udzNZemhsWWpZeE4yTTRPR014WmpNeU1XUmtNV1kyTURjM05EaG1NRGRsT0ROaE9EVTNZalkwWXpBd04yVTJaall6TmpBNFpUVmhZakpqTldZeE1tWXhmR0ZsTUdSbU0yRXpPV1JqTURrM05qYzVPVEJsTURnek16bGpNVEptTXpBMVpEWXlNVFU1WmpWaU9EUmlOak0wWlRSaFlUUmxNREV6WVdSak1XVTNabVU9IiwiY3VycmVudF91cmwiOiIiLCJyZWYiOiIiLCJjYXRfbmFtZSI6IiIsImRlYnVnX3NlYXJjaCI6dHJ1ZX0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 64
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 5347.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/T3CRV324A-5x7-area-rugs-living-room-rug-washable-vintage-boho-rug-no-slip-stain-resistant-soft-carpet-indoor-floor-floral-large-carpets-for-bedroom-dining-room
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvVDNDUlYzMjRBLTV4Ny1hcmVhLXJ1Z3MtbGl2aW5nLXJvb20tcnVnLXdhc2hhYmxlLXZpbnRhZ2UtYm9oby1ydWctbm8tc2xpcC1zdGFpbi1yZXNpc3RhbnQtc29mdC1jYXJwZXQtaW5kb29yLWZsb29yLWZsb3JhbC1sYXJnZS1jYXJwZXRzLWZvci1iZWRyb29tLWRpbmluZy1yb29tIiwiaWQiOiJUM0NSVjMyNEEiLCJza3UiOiJCMEZTMjZRVENNIiwidl9za3UiOiIiLCJwX3NrdSI6IkIwRlMyNlFUQ00iLCJjX2lkIjoiIiwic25hbWUiOiJVUyIsInNibmFtZSI6InVzc3RvcmUiLCJpc19hamF4IjpmYWxzZSwicGlkIjoiMTg4Nzk4MTkwIiwic2lkIjoiNCIsImNhbl91cmwiOiJodHRwczovL3d3dy51YnV5LnFhL2VuL3Byb2R1Y3QvVDNDUlYzMjRBLTV4Ny1hcmVhLXJ1Z3MtbGl2aW5nLXJvb20tcnVnLXdhc2hhYmxlLXZpbnRhZ2UtYm9oby1ydWctbm8tc2xpcC1zdGFpbi1yZXNpc3RhbnQtc29mdC1jYXJwZXQtaW5kb29yLWZsb29yLWZsb3JhbC1sYXJnZS1jYXJwZXRzLWZvci1iZWRyb29tLWRpbmluZy1yb29tIiwibG5nIjoiZW4iLCJkaXIiOiJhbGxzdG9yZSIsImZuIjoiZmV0Y2giLCJkIjoiZCIsInRva2VuIjoiYzIxNzVjNDA3NGUzMGVkYzQ2N2RiYWFmMmU1NjExYjZkZXRhaWwiLCJsdiI6InY0IiwiY3VzdG9tZXJfaWQiOiIiLCJjX3VfcF9zX2lkIjoiIiwiY3VyIjoiUUFSIiwiaXNfZGVhbF9hY3RpdmUiOiIxIn0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 4168.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 11 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: robot vacuum cleaner
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=robot+vacuum+cleaner
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoicm9ib3QgdmFjdXVtIGNsZWFuZXIiLCJuX2lkIjoiIiwicCI6IjEiLCJiIjoiIiwidV9mIjoiIiwicF9yIjoiIiwic19ieSI6IiIsImlzX2JyYW5kX3VybCI6IiIsInNfaWQiOiI0IiwibGFuZyI6IiIsImQiOiJkIiwiZGMiOiIiLCJpc19sdXh1cnkiOiIiLCJkZXZpY2VfdHlwZSI6ImRlc2t0b3AiLCJ0ZXN0aW5nIjoiIiwic2hvd3VybCI6IiIsInRva2VuIjoiY205aWIzUjJZV04xZFcxamJHVmhibVZ5TW53M1l6aGxZall4TjJNNE9HTXhaak15TVdSa01XWTJNRGMzTkRobU1EZGxPRE5oT0RVM1lqWTBZekF3TjJVMlpqWXpOakE0WlRWaFlqSmpOV1l4TW1ZeGZHTmpPVFF3WlRsbE5EQXpaRGt3TWpKa1l6azFNR0kzTW1JNU9XRXpOVE5sWkRCaVl6TTVaVFZoTURGaE4yRmhOV1kzTVRKaFlUVXdOMlF3WVdZMU5XWT0iLCJjdXJyZW50X3VybCI6IiIsInJlZiI6IiIsImNhdF9uYW1lIjoiIiwiZGVidWdfc2VhcmNoIjp0cnVlfQ%3D%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 16
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 691.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/4XU120O1O-shark-av2511ae-ai-robot-vacuum-with-xl-self-empty-base-bagless-60-day-capacity-lidar-navigation-home-mapping-silver-black?UTM=LTD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvNFhVMTIwTzFPLXNoYXJrLWF2MjUxMWFlLWFpLXJvYm90LXZhY3V1bS13aXRoLXhsLXNlbGYtZW1wdHktYmFzZS1iYWdsZXNzLTYwLWRheS1jYXBhY2l0eS1saWRhci1uYXZpZ2F0aW9uLWhvbWUtbWFwcGluZy1zaWx2ZXItYmxhY2siLCJpZCI6IjRYVTEyME8xTyIsInNrdSI6IkIwOVQ0WVpHUVIiLCJ2X3NrdSI6IiIsInBfc2t1IjoiQjA5VDRZWkdRUiIsImNfaWQiOiIiLCJzbmFtZSI6IlVTIiwic2JuYW1lIjoidXNzdG9yZSIsImlzX2FqYXgiOmZhbHNlLCJwaWQiOiI1MjYzNjUwMiIsInNpZCI6IjQiLCJjYW5fdXJsIjoiaHR0cHM6Ly93d3cudWJ1eS5xYS9lbi9wcm9kdWN0LzRYVTEyME8xTy1zaGFyay1hdjI1MTFhZS1haS1yb2JvdC12YWN1dW0td2l0aC14bC1zZWxmLWVtcHR5LWJhc2UtYmFnbGVzcy02MC1kYXktY2FwYWNpdHktbGlkYXItbmF2aWdhdGlvbi1ob21lLW1hcHBpbmctc2lsdmVyLWJsYWNrIiwibG5nIjoiZW4iLCJkaXIiOiJhbGxzdG9yZSIsImZuIjoiZmV0Y2giLCJkIjoiZCIsInRva2VuIjoiYzIxNzVjNDA3NGUzMGVkYzQ2N2RiYWFmMmU1NjExYjZkZXRhaWwiLCJsdiI6InY0IiwiY3VzdG9tZXJfaWQiOiIiLCJjX3VfcF9zX2lkIjoiIiwiY3VyIjoiUUFSIiwiaXNfZGVhbF9hY3RpdmUiOiIxIn0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 1156.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 12 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: wireless charging power bank
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=wireless+charging+power+bank
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoid2lyZWxlc3MgY2hhcmdpbmcgcG93ZXIgYmFuayIsIm5faWQiOiIiLCJwIjoiMSIsImIiOiIiLCJ1X2YiOiIiLCJwX3IiOiIiLCJzX2J5IjoiIiwiaXNfYnJhbmRfdXJsIjoiIiwic19pZCI6IjQiLCJsYW5nIjoiIiwiZCI6ImQiLCJkYyI6IiIsImlzX2x1eHVyeSI6IiIsImRldmljZV90eXBlIjoiZGVza3RvcCIsInRlc3RpbmciOiIiLCJzaG93dXJsIjoiIiwidG9rZW4iOiJkMmx5Wld4bGMzTmphR0Z5WjJsdVozQnZkMlZ5WW1GdWF6SjhOMk00WldJMk1UZGpPRGhqTVdZek1qRmtaREZtTmpBM056UTRaakEzWlRnellUZzFOMkkyTkdNd01EZGxObVkyTXpZd09HVTFZV0l5WXpWbU1USm1NWHd3T1RJNE9UTm1NRFZqT1dNNE1qSTFPRE0yTldKbU9HVTRObVV3WTJZNU1tUXlPV1ZrTlRSak1UUTNNMkl4Wm1FNVpqSTFNVEUxT0RGbFpUUXlZekJpIiwiY3VycmVudF91cmwiOiIiLCJyZWYiOiIiLCJjYXRfbmFtZSI6IiIsImRlYnVnX3NlYXJjaCI6dHJ1ZX0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 16
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 3834.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/R4GBCKBUO-wireless-portable-charger-30800mah-15w-wireless-charging-power-bank-25w-pd-qc-4-0-fast-charging-usb-c-lcd-display-battery-pack-for-iphone
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvUjRHQkNLQlVPLXdpcmVsZXNzLXBvcnRhYmxlLWNoYXJnZXItMzA4MDBtYWgtMTV3LXdpcmVsZXNzLWNoYXJnaW5nLXBvd2VyLWJhbmstMjV3LXBkLXFjLTQtMC1mYXN0LWNoYXJnaW5nLXVzYi1jLWxjZC1kaXNwbGF5LWJhdHRlcnktcGFjay1mb3ItaXBob25lIiwiaWQiOiJSNEdCQ0tCVU8iLCJza3UiOiJCMEZIVkM2WEhaIiwidl9za3UiOiIiLCJwX3NrdSI6IkIwRkhWQzZYSFoiLCJjX2lkIjoiIiwic25hbWUiOiJVUyIsInNibmFtZSI6InVzc3RvcmUiLCJpc19hamF4IjpmYWxzZSwicGlkIjoiMTg5Nzg4NzQ0Iiwic2lkIjoiNCIsImNhbl91cmwiOiJodHRwczovL3d3dy51YnV5LnFhL2VuL3Byb2R1Y3QvUjRHQkNLQlVPLXdpcmVsZXNzLXBvcnRhYmxlLWNoYXJnZXItMzA4MDBtYWgtMTV3LXdpcmVsZXNzLWNoYXJnaW5nLXBvd2VyLWJhbmstMjV3LXBkLXFjLTQtMC1mYXN0LWNoYXJnaW5nLXVzYi1jLWxjZC1kaXNwbGF5LWJhdHRlcnktcGFjay1mb3ItaXBob25lIiwibG5nIjoiZW4iLCJkaXIiOiJhbGxzdG9yZSIsImZuIjoiZmV0Y2giLCJkIjoiZCIsInRva2VuIjoiYzIxNzVjNDA3NGUzMGVkYzQ2N2RiYWFmMmU1NjExYjZkZXRhaWwiLCJsdiI6InY0IiwiY3VzdG9tZXJfaWQiOiIiLCJjX3VfcF9zX2lkIjoiIiwiY3VyIjoiUUFSIiwiaXNfZGVhbF9hY3RpdmUiOiIxIn0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 1292.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 13 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: electric high pressure washer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=electric+high+pressure+washer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoiZWxlY3RyaWMgaGlnaCBwcmVzc3VyZSB3YXNoZXIiLCJuX2lkIjoiIiwicCI6IjEiLCJiIjoiIiwidV9mIjoiIiwicF9yIjoiIiwic19ieSI6IiIsImlzX2JyYW5kX3VybCI6IiIsInNfaWQiOiI0IiwibGFuZyI6IiIsImQiOiJkIiwiZGMiOiIiLCJpc19sdXh1cnkiOiIiLCJkZXZpY2VfdHlwZSI6ImRlc2t0b3AiLCJ0ZXN0aW5nIjoiIiwic2hvd3VybCI6IiIsInRva2VuIjoiWld4bFkzUnlhV05vYVdkb2NISmxjM04xY21WM1lYTm9aWEl5ZkRkak9HVmlOakUzWXpnNFl6Rm1Nekl4WkdReFpqWXdOemMwT0dZd04yVTRNMkU0TlRkaU5qUmpNREEzWlRabU5qTTJNRGhsTldGaU1tTTFaakV5WmpGOE5UZ3paVEZpWTJSaU16SmxNekUzWXpNM1ptTmpaRE01T0dZMk9UVXlaamhqTlRNNU56QmtNekl4TVRNM1l6TXdZbVZqTURVeVltWmlNR0V5TWpGbFpRPT0iLCJjdXJyZW50X3VybCI6IiIsInJlZiI6IiIsImNhdF9uYW1lIjoiIiwiZGVidWdfc2VhcmNoIjp0cnVlfQ%3D%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 15
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 2597.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/QVRG0UAA8-adjustable-pressure-washer-with-touch-screen-8-setting-4-quick-connect-nozzles-inlet-hose-filter-foam-cannon-for-cars-fences-cleaning-red?UTM=LTD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvUVZSRzBVQUE4LWFkanVzdGFibGUtcHJlc3N1cmUtd2FzaGVyLXdpdGgtdG91Y2gtc2NyZWVuLTgtc2V0dGluZy00LXF1aWNrLWNvbm5lY3Qtbm96emxlcy1pbmxldC1ob3NlLWZpbHRlci1mb2FtLWNhbm5vbi1mb3ItY2Fycy1mZW5jZXMtY2xlYW5pbmctcmVkIiwiaWQiOiJRVlJHMFVBQTgiLCJza3UiOiJCMEZROVlNMU1CIiwidl9za3UiOiIiLCJwX3NrdSI6IkIwRlE5WU0xTUIiLCJjX2lkIjoiIiwic25hbWUiOiJVUyIsInNibmFtZSI6InVzc3RvcmUiLCJpc19hamF4IjpmYWxzZSwicGlkIjoiMTg1MzQ0NjM1Iiwic2lkIjoiNCIsImNhbl91cmwiOiJodHRwczovL3d3dy51YnV5LnFhL2VuL3Byb2R1Y3QvUVZSRzBVQUE4LWFkanVzdGFibGUtcHJlc3N1cmUtd2FzaGVyLXdpdGgtdG91Y2gtc2NyZWVuLTgtc2V0dGluZy00LXF1aWNrLWNvbm5lY3Qtbm96emxlcy1pbmxldC1ob3NlLWZpbHRlci1mb2FtLWNhbm5vbi1mb3ItY2Fycy1mZW5jZXMtY2xlYW5pbmctcmVkIiwibG5nIjoiZW4iLCJkaXIiOiJhbGxzdG9yZSIsImZuIjoiZmV0Y2giLCJkIjoiZCIsInRva2VuIjoiYzIxNzVjNDA3NGUzMGVkYzQ2N2RiYWFmMmU1NjExYjZkZXRhaWwiLCJsdiI6InY0IiwiY3VzdG9tZXJfaWQiOiIiLCJjX3VfcF9zX2lkIjoiIiwiY3VyIjoiUUFSIiwiaXNfZGVhbF9hY3RpdmUiOiIxIn0%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 6766.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 14 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: guitar tuning pedal
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=guitar+tuning+pedal
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoiZ3VpdGFyIHR1bmluZyBwZWRhbCIsIm5faWQiOiIiLCJwIjoiMSIsImIiOiIiLCJ1X2YiOiIiLCJwX3IiOiIiLCJzX2J5IjoiIiwiaXNfYnJhbmRfdXJsIjoiIiwic19pZCI6IjQiLCJsYW5nIjoiIiwiZCI6ImQiLCJkYyI6IiIsImlzX2x1eHVyeSI6IiIsImRldmljZV90eXBlIjoiZGVza3RvcCIsInRlc3RpbmciOiIiLCJzaG93dXJsIjoiIiwidG9rZW4iOiJaM1ZwZEdGeWRIVnVhVzVuY0dWa1lXd3lmRGRqT0dWaU5qRTNZemc0WXpGbU16SXhaR1F4WmpZd056YzBPR1l3TjJVNE0yRTROVGRpTmpSak1EQTNaVFptTmpNMk1EaGxOV0ZpTW1NMVpqRXlaakY4WVRObU56Y3hNVGhrTkRneFltRTFNemt3TlRBMlpEZzBaalU0WkRFNU5EbGlaVEU1WXpobE5qZ3hZMlJtTlRBM05XSTNNbU16TkRrM05tVXhOVGxsTWc9PSIsImN1cnJlbnRfdXJsIjoiIiwicmVmIjoiIiwiY2F0X25hbWUiOiIiLCJkZWJ1Z19zZWFyY2giOnRydWV9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 44
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 3465.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/7UWTGGOQM-guitar-tuner-pedal-with-true-bypass-tuner-for-electric-guitar-and-bass-color-display-tuner-pedal-with-mute-pitch-and-flat-tuning
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvN1VXVEdHT1FNLWd1aXRhci10dW5lci1wZWRhbC13aXRoLXRydWUtYnlwYXNzLXR1bmVyLWZvci1lbGVjdHJpYy1ndWl0YXItYW5kLWJhc3MtY29sb3ItZGlzcGxheS10dW5lci1wZWRhbC13aXRoLW11dGUtcGl0Y2gtYW5kLWZsYXQtdHVuaW5nIiwiaWQiOiI3VVdUR0dPUU0iLCJza3UiOiJCMEJKVE00NDdOIiwidl9za3UiOiIiLCJwX3NrdSI6IkIwQkpUTTQ0N04iLCJjX2lkIjoiIiwic25hbWUiOiJVUyIsInNibmFtZSI6InVzc3RvcmUiLCJpc19hamF4IjpmYWxzZSwicGlkIjoiODk1OTM1ODYiLCJzaWQiOiI0IiwiY2FuX3VybCI6Imh0dHBzOi8vd3d3LnVidXkucWEvZW4vcHJvZHVjdC83VVdUR0dPUU0tZ3VpdGFyLXR1bmVyLXBlZGFsLXdpdGgtdHJ1ZS1ieXBhc3MtdHVuZXItZm9yLWVsZWN0cmljLWd1aXRhci1hbmQtYmFzcy1jb2xvci1kaXNwbGF5LXR1bmVyLXBlZGFsLXdpdGgtbXV0ZS1waXRjaC1hbmQtZmxhdC10dW5pbmciLCJsbmciOiJlbiIsImRpciI6ImFsbHN0b3JlIiwiZm4iOiJmZXRjaCIsImQiOiJkIiwidG9rZW4iOiJjMjE3NWM0MDc0ZTMwZWRjNDY3ZGJhYWYyZTU2MTFiNmRldGFpbCIsImx2IjoidjQiLCJjdXN0b21lcl9pZCI6IiIsImNfdV9wX3NfaWQiOiIiLCJjdXIiOiJRQVIiLCJpc19kZWFsX2FjdGl2ZSI6IjEifQ%3D%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 3764.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ----- Iteration 15 / 15 -----
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Keyword: cold brew coffee maker
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Navigating to: https://www.ubuy.qa/en/search/?ref_p=ser_tp&q=cold+brew+coffee+maker
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Searhed product URL: https://www.ubuy.qa/en/search_product?product_data=eyJkaXIiOiJ1c3N0b3JlIiwic3ViIjoidXMiLCJxIjoiY29sZCBicmV3IGNvZmZlZSBtYWtlciIsIm5faWQiOiIiLCJwIjoiMSIsImIiOiIiLCJ1X2YiOiIiLCJwX3IiOiIiLCJzX2J5IjoiIiwiaXNfYnJhbmRfdXJsIjoiIiwic19pZCI6IjQiLCJsYW5nIjoiIiwiZCI6ImQiLCJkYyI6IiIsImlzX2x1eHVyeSI6IiIsImRldmljZV90eXBlIjoiZGVza3RvcCIsInRlc3RpbmciOiIiLCJzaG93dXJsIjoiIiwidG9rZW4iOiJZMjlzWkdKeVpYZGpiMlptWldWdFlXdGxjako4TjJNNFpXSTJNVGRqT0Roak1XWXpNakZrWkRGbU5qQTNOelE0WmpBM1pUZ3pZVGcxTjJJMk5HTXdNRGRsTm1ZMk16WXdPR1UxWVdJeVl6Vm1NVEptTVh3d09UWTVZMlkzTkRkbE5tTmxNak16TTJVelpERXlZV0V4WXpZd056TmlaVFU0TW1VelpqSmxZMk00WW1RNE9XVmhaalkzTmprd1pURmxaR0k1WTJFMSIsImN1cnJlbnRfdXJsIjoiIiwicmVmIjoiIiwiY2F0X25hbWUiOiIiLCJkZWJ1Z19zZWFyY2giOnRydWV9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Number of products found: 45
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Response time taken for search: 3271.0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          **Starting Detail Page check
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Chosen URL for detail page check : https://www.ubuy.qa/en/product/QC29NF3I0-delonghi-la-specialista-touch-espresso-machine-with-grinder-milk-frother-cold-brew-iced-coffee-maker-burr-grinder-10-drink-presets-compact?UTM=LTD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product URL: https://www.ubuy.qa/en/detail_product?fetch_data=eyJjdXJfdXJsIjoiL3Byb2R1Y3QvUUMyOU5GM0kwLWRlLWxvbmdoaS1sYS1zcGVjaWFsaXN0YS10b3VjaC1lc3ByZXNzby1tYWNoaW5lLXdpdGgtY29sZC1icmV3LWF1dG8tbGF0dGVhcnQtdGVjaG5vbG9neSIsImlkIjoiUUMyOU5GM0kwIiwic2t1IjoiQjBGNkRZMURHUiIsInZfc2t1IjoiIiwicF9za3UiOiJCMEY2RFkxREdSIiwiY19pZCI6IiIsInNuYW1lIjoiVVMiLCJzYm5hbWUiOiJ1c3N0b3JlIiwiaXNfYWpheCI6ZmFsc2UsInBpZCI6IjEzODIzNDA0NyIsInNpZCI6IjQiLCJjYW5fdXJsIjoiaHR0cHM6Ly93d3cudWJ1eS5xYS9lbi9wcm9kdWN0L1FDMjlORjNJMC1kZS1sb25naGktbGEtc3BlY2lhbGlzdGEtdG91Y2gtZXNwcmVzc28tbWFjaGluZS13aXRoLWNvbGQtYnJldy1hdXRvLWxhdHRlYXJ0LXRlY2hub2xvZ3kiLCJsbmciOiJlbiIsImRpciI6ImFsbHN0b3JlIiwiZm4iOiJmZXRjaCIsImQiOiJkIiwidG9rZW4iOiJjMjE3NWM0MDc0ZTMwZWRjNDY3ZGJhYWYyZTU2MTFiNmRldGFpbCIsImx2IjoidjQiLCJjdXN0b21lcl9pZCI6IiIsImNfdV9wX3NfaWQiOiIiLCJjdXIiOiJRQVIiLCJpc19kZWFsX2FjdGl2ZSI6IjEifQ%3D%3D
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          detail_product Response Time: 1315.0s
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Found the product in stock
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          ===== OOS Summary =====
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Total Products Checked: 15
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          Total Products OOS: 0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          OOS Percentage: 0.00%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          OOS Threshold: 70%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:02:42 am</td>
+        <td>
+          PASS: OOS percentage is within acceptable limits
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 3, 2025 01:57:49 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 3, 2025 02:02:42 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>1</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>172</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"org.testng.internal.TestResult":0.032
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>User</td>
+<td>Souma</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 1,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 172
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

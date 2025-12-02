@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="UbuySuite" verbose="1" parallel="false">
+
+    <!-- Extent Report Listener -->
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+
+    <!-- Parameters -->
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Search Product Tests">
+        <classes>
+            <class name="testCases.TC001_Search_and_Detail_Speed"/>
+        </classes>
+    </test>
+
+</suite>

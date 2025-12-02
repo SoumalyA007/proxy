@@ -7,8 +7,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.decorators.WebDriverDecorator;
 import org.testng.ITestContext;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -26,6 +28,8 @@ public class baseClass {
     public static Properties p;
     public Logger logger;
 
+    @BeforeClass
+    @Parameters({"os","browser"})
     public void setup(String os, String browser, ITestContext testContext) throws IOException {
 
         FileReader fr = new FileReader("./src//test//resources//config.properties");
@@ -37,8 +41,10 @@ public class baseClass {
         switch(browser.toLowerCase()){
             case "chrome":
                 driver= new ChromeDriver();
+                break;
             default:
                 System.out.println("Driver has issue");
+                break;
         }
 
         driver.manage().deleteAllCookies();
@@ -48,6 +54,11 @@ public class baseClass {
         testContext.setAttribute("Webdriver",driver);
         driver.manage().window().maximize();
 
+    }
+
+    @AfterClass
+    public void teardown(){
+        driver.close();
     }
 
     public String captureScreenshot(String tname) throws IOException {
